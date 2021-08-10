@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+	<definition name="defaultPaginationPage"
+		template="/WEB-INF/views/tiles/layouts/defaultPaginationPage.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- login definition -->
+	<definition name="loginLayout"
+		template="/WEB-INF/views/tiles/layouts/loginLayout.jsp">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- access denied definition -->
+	<definition name="accessDeniedLayout"
+		template="/WEB-INF/views/tiles/layouts/accessDeniedLayout.jsp">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- login page -->
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/login.jsp" />
+	</definition>
+
+	<!-- home -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+
+	<definition name="addcountry" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addcountry.jsp" />
+	</definition>
+
+	<definition name="addState" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addState.jsp" />
+	</definition>
+
+	<definition name="addDist" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addDist.jsp" />
+	</definition>
+
+	<definition name="addCity" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addCity.jsp" />
+	</definition>
+	<definition name="addEmployee" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addEmployee.jsp" />
+	</definition>
+
+	<definition name="getEmployeeReport"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/getEmployeeReport.jsp" />
+	</definition>
+
+</tiles-definitions> 
